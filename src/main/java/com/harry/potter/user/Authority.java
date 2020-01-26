@@ -6,6 +6,11 @@ import javax.persistence.*;
 
 @Entity(name = "AUTHORITY")
 @Data
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 class Authority {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

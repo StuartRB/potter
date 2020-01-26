@@ -11,6 +11,9 @@ import java.util.List;
 @Getter
 @Setter
 @Table
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)

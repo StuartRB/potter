@@ -5,6 +5,9 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
   h2.console:
     enabled: true
     path: /h2-console
@@ -14,3 +17,12 @@ spring:
     continue-on-error: false
     initialization-mode: always
 
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
