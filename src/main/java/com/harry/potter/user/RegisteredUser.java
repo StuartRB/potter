@@ -12,7 +12,7 @@ public class RegisteredUser implements UserDetails {
 
     private User user;
 
-    RegisteredUser(User user) {
+    public RegisteredUser(User user) {
         this.user = user;
     }
 
