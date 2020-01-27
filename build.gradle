@@ -17,6 +17,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'com.auth0', name: 'java-jwt', version: '3.9.0'
 	implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
 	annotationProcessor 'org.projectlombok:lombok:1.18.10'
 	runtimeOnly 'com.h2database:h2'
